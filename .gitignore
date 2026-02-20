@@ -1,0 +1,75 @@
+# ========================
+# Dependencies
+# ========================
+node_modules/
+.pnp/
+.pnp.js
+
+# ========================
+# Environment files
+# ========================
+.env
+.env.*
+!.env.example
+
+# ========================
+# Build outputs
+# ========================
+dist/
+build/
+out/
+.next/
+.vercel/
+
+# ========================
+# Logs
+# ========================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+bun-debug.log*
+
+# ========================
+# OS files
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# Editor / IDE
+# ========================
+.vscode/
+.idea/
+*.swp
+
+# ========================
+# Cache / Temp
+# ========================
+.cache/
+.tmp/
+.temp/
+coverage/
+
+# ========================
+# Backend specific
+# ========================
+uploads/
+storage/
+data/
+*.sqlite
+*.db
+
+# ========================
+# Frontend specific
+# ========================
+.vite/
+.eslintcache
+.stylelintcache
+
+# ========================
+# Misc
+# ========================
+*.pem
+*.key
