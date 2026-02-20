@@ -1,3 +1,4 @@
+import "./config/env.js";
 import express from "express";
 import { createServer } from "http";
 import { Server } from "socket.io";
@@ -33,9 +34,10 @@ socket.on("disconnect", () => {
   console.log(`server disconneted ${socket.id}`);
 });
 
+const PORT=process.env.PORT;
 
 })
-server.listen(8000,()=>{
+server.listen(PORT,()=>{
   console.log("server started .....")
 })
 
