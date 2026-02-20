@@ -4,6 +4,9 @@ import { createServer } from "http";
 import { Server } from "socket.io";
 import cors from "cors";
 
+const PORT = process.env.PORT;
+
+
 const app=express();
 
 const server=createServer(app);
@@ -34,7 +37,6 @@ socket.on("disconnect", () => {
   console.log(`server disconneted ${socket.id}`);
 });
 
-const PORT=process.env.PORT;
 
 })
 server.listen(PORT,()=>{
