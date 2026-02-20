@@ -1,6 +1,6 @@
 import { io } from "https://cdn.socket.io/4.7.2/socket.io.esm.min.js";
 
-const socket = io("http://localhost:8000");
+const socket = io("https://socket-six-green.vercel.app/");
 
 socket.on("connect", () => {
   console.log("socketid", socket.id);
